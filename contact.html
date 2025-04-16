@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - CIL Employee Tools</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="leave-encashment.html">Leave Encashment Calculator</a>
+      <a href="gratuity.html">Gratuity Calculator</a>
+      <a href="pension.html">Pension Calculator</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Get in Touch</h2>
+      <p>If you have questions, feedback, or suggestions, feel free to reach out to me directly via email:</p>
+      <p><strong>Email:</strong> <a href="mailto:secl.balram@gmail.com">secl.balram@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Balram Behara</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navMenu');
+      nav.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>

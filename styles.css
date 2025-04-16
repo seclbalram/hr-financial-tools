@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer {
+    background-color: #003366;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 2em;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  label, input, select {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  
+  button {
+    padding: 0.5em 1em;
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #result {
+    margin-top: 2em;
+    font-weight: bold;
+  }
+  
+  .conditional-fields {
+    display: none;
+  }
+
+  .radio-group {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+    align-items: center;
+  }
+  
+  .radio-group label {
+    margin: 0;
+  }
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  
+  .form-label {
+    width: 150px;
+    font-weight: bold;
+  }
+  
+  .radio-options {
+    display: flex;
+    gap: 2em;
+  }
+  
+  .radio-options label {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+  }
+/* Base styles */
+nav {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 0.5em;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1.2em;
+  }
+  
+  /* Responsive hamburger menu */
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+      flex-direction: column;
+      background-color: #003366;
+      padding: 1em;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+    }
+  
+    nav a {
+      color: white;
+      text-align: left;
+      padding: 0.5em 0;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    nav.show {
+      display: flex;
+    }
+  }
+
+  /* Base styles */
+nav {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 0.5em;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1.2em;
+  }
+  
+  /* Responsive hamburger menu */
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+      flex-direction: column;
+      background-color: #003366;
+      padding: 1em;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+    }
+  
+    nav a {
+      color: white;
+      text-align: left;
+      padding: 0.5em 0;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    nav.show {
+      display: flex;
+    }
+  }
+  

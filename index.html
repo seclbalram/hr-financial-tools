@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CIL Employee Tools</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>CIL Employee Tools</h1>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav id="navMenu">
+          <a href="index.html">Home</a>
+          <a href="leave-encashment.html">Leave Encashment Calculator</a>
+          <a href="gratuity.html">Gratuity Calculator</a>
+          <a href="pension.html">Pension Calculator</a>
+          <a href="contact.html">Contact Us</a>
+
+        </nav>
+      </header>
+      
+      
+  <main>
+    <section>
+      <h2>Welcome to CIL Employee Tools</h2>
+      <p>This platform is designed to assist Coal India employees in calculating various financial benefits, including Leave Encashment, Gratuity, and Pension. Select a calculator from the navigation menu to get started.</p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Balram Behara</p>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navMenu');
+      nav.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>

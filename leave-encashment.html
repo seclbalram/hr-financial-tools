@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leave Encashment Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>CIL Employee Tools</h1>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav id="navMenu">
+          <a href="index.html">Home</a>
+          <a href="leave-encashment.html">Leave Encashment Calculator</a>
+          <a href="gratuity.html">Gratuity Calculator</a>
+          <a href="pension.html">Pension Calculator</a>
+          <a href="contact.html">Contact Us</a>
+
+        </nav>
+      </header>
+      
+  <main>
+    <form id="leaveForm">
+      <label for="category">Employee Category:</label>
+      <select id="category" name="category" required>
+        <option value="">--Select--</option>
+        <option value="executive">Executive</option>
+        <option value="non-executive">Non-Executive</option>
+      </select>
+
+      <!-- Executive Fields -->
+      <div id="executiveFields" class="conditional-fields">
+        <label for="basicPayExec">Basic Pay (₹):</label>
+        <input type="number" id="basicPayExec" name="basicPayExec" min="0" step="0.01" />
+
+        <label for="ida">IDA Rate (% of Basic Pay):</label>
+        <input type="number" id="ida" name="ida" min="0" step="0.01" />
+
+        <label for="elExec">Earned Leave (EL) Days:</label>
+        <input type="number" id="elExec" name="elExec" min="0" step="1" />
+
+        <label for="hpl">Half Pay Leave (HPL) Days:</label>
+        <input type="number" id="hpl" name="hpl" min="0" step="1" />
+      </div>
+
+      <!-- Non-Executive Fields -->
+      <div id="nonExecFields" class="conditional-fields">
+        <label for="basicPayNonExec">Basic Pay (₹):</label>
+        <input type="number" id="basicPayNonExec" name="basicPayNonExec" min="0" step="0.01" />
+
+        <label for="vda">VDA Rate (% of Basic Pay):</label>
+        <input type="number" id="vda" name="vda" min="0" step="0.01" />
+
+        <div class="form-group">
+            <label class="form-label">Employee Type:</label>
+            <div class="radio-options">
+              <label><input type="radio" name="empType" value="daily" required> Daily Rated</label>
+              <label><input type="radio" name="empType" value="monthly" required> Monthly Rated</label>
+            </div>
+          </div>
+        <label for="elNonExec">Earned Leave (EL) Days:</label>
+        <input type="number" id="elNonExec" name="elNonExec" min="0" step="1" />
+      </div>
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div id="result"></div>
+  </main>
+  <footer>
+    <p>© 2025 Balram Behara</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
